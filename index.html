@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Index</title>
+	<style>
+		/* Page-wide layout and color styling. Padding added for aesthetics, headings and spacing.*/
+		* { box-sizing: border-box; }
+		body {
+			margin: 0;
+			font: Arial;
+			line-height: 1.6;
+			color: #33413a;
+			background-color: #fdf1f4;
+		}
+		.page {
+			max-width: 1000px;
+			margin: 0 auto;
+			padding: 3rem 1.5rem;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 2.5rem;
+			align-items: center;
+		}
+
+		h1 {
+			font-size: 2.5rem;
+			margin-bottom: 1rem;
+		}
+
+		.bio {
+			font-size: 1.05rem;
+			max-width: 55ch;
+		}
+
+		.portrait img {
+			width: 100%;
+			display: block;
+			border-radius: 8px;
+			box-shadow: 0 4px 14px rgba(244, 166, 191, 0.35);
+		}
+
+		/* Mouse click feedback. */
+		.link {
+			display: inline-block;
+			margin-top: 2rem;
+			padding: 0.75rem 1.25rem;
+			background: #9dc3a6;
+			color: #2f3e35;
+			text-decoration: none;
+			font-weight: bold;
+			border-radius: 4px;
+		}
+
+		.link:hover, .link:focus {
+			background: #f4a6bf;
+			color: #3a2530;
+		}
+
+	</style>
+</head>
+<body>
+
+	<main class="page">
+
+		<section>
+
+			<!-- Title and short personal bio -->
+			<h1>Assignment 1 - Webpage Creation.</h1>
+
+			<p class="bio">
+				My name is Joshua Thomas. I am a senior here at NCAT and I am pursuing a degree in Computer Science. 
+                I have a passion for technology and hope to use my knowledge to help others. 
+                In am an avid gamer, and love to read novels too.
+			</p>
+
+			<!-- List of current semester courses -->
+			<div class="course-panel">
+				<h2>Courses this semester</h2>
+				<ul>
+					<li>COMP 350 - Operating Systems</li>
+					<li>COMP 322 - Internet Systems</li>
+					<li>COMP 360 - Programming Languages</li>
+					<li>COMP 365 - AI and Machine Learning</li>
+					<li>ECEN 375 - Computer Architecture</li>
+				</ul>
+			</div>
+
+			<!-- Link to the introduction page -->
+			<a class="link" href="introduction.html">Learn more about me →</a>
+
+		</section>
+
+		<!-- Portrait photo displayed beside the bio -->
+		<figure class="portrait">
+			<img src="img/img1.jpg">
+		</figure>
+
+	</main>
+
+</body>
+</html>

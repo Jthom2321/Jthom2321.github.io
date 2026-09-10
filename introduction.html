@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Introduction</title>
+	<style>
+		/* Layout and color styling. Padding added for aesthetics, headings and spacing. */
+		* { box-sizing: border-box; }
+		body {
+			margin: 0;
+			font: Arial;
+			line-height: 1.6;
+			color: #33413a;
+			background-color: #fdf1f4;
+		}
+
+		header {
+			background: #7fa88c;
+			color: #fff;
+			padding: 3rem 1.5rem;
+			text-align: center;
+		}
+
+		header h1 {
+			margin: 0;
+			font-size: 2.2rem;
+		}
+
+		.content {
+			max-width: 1000px;
+			margin: 0 auto;
+			padding: 3rem 1.5rem;
+		}
+
+		.gallery {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 1.5rem;
+			margin-bottom: 3rem;
+		}
+
+		.gallery figure {
+			margin: 0;
+			background: #fff;
+			border-radius: 6px;
+			overflow: hidden;
+			box-shadow: 0 2px 10px rgba(244, 166, 191, 0.3);
+		}
+
+		.gallery img {
+			width: 100%;
+			height: 220px;
+			object-fit: cover;
+			display: block;
+		}
+
+		.table-wrap {
+			overflow-x: auto;
+			background: #fff;
+			border-radius: 6px;
+			box-shadow: 0 2px 10px rgba(244, 166, 191, 0.3);
+		}
+
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			min-width: 600px;
+		}
+
+		caption {
+			padding: 1rem;
+			text-align: left;
+			font-size: 1.4rem;
+			font-weight: bold;
+		}
+
+		th, td {
+			padding: 0.9rem 1.1rem;
+			text-align: left;
+			vertical-align: top;
+			border-top: 1px solid #ddd;
+		}
+
+		th {
+			background: #9dc3a6;
+			color: #fff;
+		}
+
+		tr:nth-child(even) td {
+			background: #fdf1f4;
+		}
+
+		/* Mouse click feedback. */
+		.back {
+			display: inline-block;
+			margin-top: 2rem;
+			color: #33413a;
+			font-weight: bold;
+			text-decoration: underline;
+		}
+
+		.back:hover, .back:focus {
+			color: #f4a6bf;
+		}
+
+		
+	</style>
+</head>
+<body>
+	<!-- Page header/banner styling-->
+	<header>
+		<h1>More About Me</h1>
+	</header>
+
+	<main class="content">
+
+		<section class="gallery">
+			<figure>
+				<img src="img/img2.jpg" alt="A photo of my dog Sophie">
+			</figure>
+			<figure>
+				<img src="img/img3.jpg" alt="A picture of one of my favorite video games, Stardew Valley">
+			</figure>
+		</section>
+
+		<!-- Table of skills, abilities, education, and training -->
+		<section class="table-wrap">
+			<table>
+				<caption>Skills, Abilities, Education, and Training</caption>
+				<thead>
+					<tr>
+						<th scope="col">Area</th>
+						<th scope="col">What I Know</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">Technical Skills</th>
+						<td>C++, Java, Python. Mobile App Development. I am currently working on Taskey, the browser prioritizer.</td>
+					</tr>
+					<tr>
+						<th scope="row">Abilities</th>
+						<td>Problem Solving, Work Quality, Communication, and Organization. I believe that I am skilled in individual work but can work extremely well in a team environment.</td>
+					</tr>
+					<tr>
+						<th scope="row">Education</th>
+						<td>Computer Science Degree, Senior. I should be graduating soon with a strong foundation in computer science principles.</td>
+					</tr>
+					<tr>
+						<th scope="row">Training</th>
+						<td>Youtube. You can find a tutorial on almost anything. I've even started developing my own game for a platform.</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<a class="back" href="index.html">← Back to Home</a>
+
+	</main>
+
+</body>
+</html>
